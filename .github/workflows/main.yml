@@ -25,6 +25,6 @@ jobs:
       - name: Check for Resolves / Fixes
         uses: GsActions/commit-message-checker@v1
         with:
-          pattern: '^[A-B]\#{0-9}+$'
+          pattern: '^[A-B]{2}\#{0-9}+$'
           error: 'You need at least one "AB: #<issue number>" line.'
   
