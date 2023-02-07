@@ -33,7 +33,6 @@
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
-          //1
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.1.0</version>
         </plugin>
@@ -98,5 +97,3 @@
 </distributionManagement>
 
 </project>
-
-//123456
