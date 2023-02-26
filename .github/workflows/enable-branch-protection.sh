@@ -6,8 +6,8 @@ OWNER=Naveenmorty
 REPO=SampleWar # retrieve this with: basename $(git config --get remote.origin.url) .git
 
 curl https://api.github.com/repos/${OWNER}/${REPO}/branches/master \
-    -H "Authorization: Bearer $OAUTH2_TOKEN" \
-    -H "Accept: application/vnd.github.loki-preview+json" \
+    -H "Authorization: token $OAUTH2_TOKEN" \
+    -H "Accept: application/vnd.github+json" \
     -X PATCH \
     -d '{
       "protection": {
