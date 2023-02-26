@@ -12,7 +12,13 @@ curl https://api.github.com/repos/${OWNER}/${REPO}/branches/master \
     -d '{
       "protection": {
         "enabled": true,
-		"lock_branch":true
+		"lock_branch":true,
+		"required_status_checks": {
+          "enforcement_level": "everyone",
+          "contexts": [
+            "default"
+          ]
+        }
       }
     }' \
     -s | json protection
