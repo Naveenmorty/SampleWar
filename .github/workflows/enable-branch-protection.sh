@@ -18,6 +18,7 @@ curl https://api.github.com/repos/${OWNER}/${REPO}/branches/master \
             "default"
           ]
         }
-      }
+      },
+      "lock_branch": true
     }' \
     -s | json protection
