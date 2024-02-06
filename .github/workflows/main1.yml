@@ -26,5 +26,5 @@ jobs:
       - name: Push to destination repository
         run: |
           git remote add destination_repo https://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@github.com/Changepond-DevOps/github-hook.git
-          git push destination_repo main  # Replace with the branch you want to push
+          git push destination_repo master
 
