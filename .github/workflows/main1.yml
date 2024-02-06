@@ -18,8 +18,10 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config user.name "${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4A6CF52EEFA54D97802FDAB3E9CC0E95 }}"
-          git config user.email "${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4A6CF52EEFA54D97802FDAB3E9CC0E95 }}@Naveenmorty.noreply.github.com"
+          git config user.name "Naveenmorty"
+          git config user.email "naveenkumar1297g@gmail.com"
+          git config credential.helper "store"
+          echo "https://Naveenmorty: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@github.com" > ~/.git-credentials
 
       - name: Push to destination repository
         run: |
