@@ -13,8 +13,8 @@ jobs:
       - name: Checkout source repository
         uses: actions/checkout@v2
         with:
-          repository: https://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@github.com/Naveenmorty/SampleWar.git
-          ref: master  # Replace with the branch you want to push
+          repository: https://github.com/Naveenmorty/SampleWar.git
+          ref: master
 
       - name: Configure Git
         run: |
