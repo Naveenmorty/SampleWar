@@ -28,6 +28,6 @@ jobs:
           git config user.name "Naveenmorty"
           git config user.email "naveenkumar1297g@gmail.com"
           git config credential.helper "store"
-          git remote add destination_repo https://Naveenmorty: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@github.com/Naveenmorty/github-hook.git
+          git remote add destination_repo https://Naveenmorty:${{ secrets.REPO_NAME }}@github.com/Naveenmorty/github-hook.git
           git push destination_repo master
 
