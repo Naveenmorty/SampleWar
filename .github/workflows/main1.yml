@@ -25,6 +25,6 @@ jobs:
 
       - name: Push to destination repository
         run: |
-          git remote add destination_repo https://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@github.com/Naveenmorty/github-hook.git
+          git remote add destination_repo https://Naveenmorty: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@github.com/Naveenmorty/github-hook.git
           git push destination_repo master
 
